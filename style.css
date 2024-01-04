@@ -18,10 +18,6 @@ a {
   text-decoration: none;
 }
 
-.header {
-  border-bottom: 1px solid #e2e8f0;
-}
-
 .navbar {
   margin: 1rem 2rem;
   display: flex;
@@ -129,7 +125,7 @@ a {
 .hero {
   position: static;
   background: url("images/benyamin-bohlouli-_C-S7LqxHPw-unsplash.jpg") no-repeat
-     center/cover;
+    center/cover;
   height: 700px;
   display: flex;
   align-items: center;
@@ -248,8 +244,7 @@ a {
   display: none;
 }
 
-.according-content table,
-th,
+.according-content th,
 td {
   border: 1px solid #09090a;
 }
@@ -294,7 +289,7 @@ form {
   color: #e2e8f0;
   background-color: #101010;
   font-size: 16px;
-  margin: 2rem;
+  margin-top: 2rem;
   letter-spacing: 1rem;
 }
 .opening-times {
@@ -318,4 +313,224 @@ form {
   font-size: 14px;
   border: none;
   padding: 1rem;
+}
+
+/*Media quieries */
+@media screen and (max-width: 1440px) {
+  .hero {
+    height: 450px;
+  }
+  .about {
+    margin: 12rem 10rem;
+  }
+
+  .about-text {
+    width: 55rem;
+  }
+
+  .prices-info {
+    padding: 5rem;
+  }
+
+  .info {
+    padding: 5rem;
+  }
+  .footer {
+    margin-top: 15rem;
+    padding: 5rem 10rem;
+  }
+  form {
+    padding: 2rem 5rem;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .hero {
+    height: 50px;
+  }
+  .about {
+    margin: 12rem 10rem;
+  }
+
+  .about-text {
+    width: 45rem;
+  }
+  .footer {
+    padding: 5rem 5rem;
+  }
+  form {
+    padding: 2rem 2rem;
+  }
+  .sign-up-info input {
+    font-size: 16px;
+    margin-right: 1rem;
+    padding: 2rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .hero h1 {
+    font-size: 52px;
+  }
+
+  .hero p {
+    font-size: 18px;
+    letter-spacing: 0.5rem;
+  }
+  .about {
+    margin: 12rem 5rem;
+  }
+
+  .about-text {
+    width: 40rem;
+  }
+
+  .sign-up p {
+    width: 25rem;
+  }
+  .sign-up-info {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 426px) {
+  .nav-logo {
+    font-size: 26px;
+    letter-spacing: 0.5rem;
+  }
+
+  .phone p {
+    font-size: 12px;
+    width: 10rem;
+  }
+
+  .phone button {
+    letter-spacing: 4px;
+    font-size: 12px;
+  }
+  .hero {
+    gap: 1rem;
+  }
+
+  .hero h1 {
+    font-size: 32px;
+    letter-spacing: 1rem;
+  }
+
+  .hero p {
+    font-size: 16px;
+    letter-spacing: 0.5rem;
+    text-align: center;
+  }
+  .about {
+    margin: 12rem 5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+  }
+  .about-title {
+    width: 35rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .about-title h2 {
+    font-size: 32px;
+  }
+  .socials p {
+    font-size: 20px;
+  }
+
+  .socials a {
+    font-size: 20px;
+  }
+
+  .about-text {
+    width: 100%;
+  }
+  .accordian {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  form {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .opening-times {
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+    text-align: center;
+    align-items: center;
+  }
+}
+@media screen and (max-width: 375px) {
+  .about {
+    margin: 10rem 3rem;
+    gap: 5rem;
+  }
+  .about-title {
+    width: 100%;
+  }
+  .about-title h2 {
+    font-size: 28px;
+  }
+  .about-text p {
+    font-size: 16px;
+  }
+  .socials a,
+  p {
+    font-size: 18px;
+  }
+  .prices-info {
+    padding: 2rem;
+  }
+  .prices-info h3,
+  .info h3 {
+    width: 20rem;
+    font-size: 28px;
+    margin-bottom: 2rem;
+  }
+  .prices-info p,
+  .info p {
+    font-size: 14px;
+  }
+
+  .according-title {
+    font-size: 14px;
+    padding: 8px;
+  }
+  .footer {
+    margin-top: 5rem;
+  }
+  form {
+    text-align: center;
+  }
+  .sign-up-info input {
+    text-align: center;
+  }
+}
+@media screen and (max-width: 321px) {
+  .navbar {
+    margin: 1rem;
+    padding: 1rem;
+  }
+  .phone p {
+    font-size: 12px;
+    width: 10rem;
+  }
+
+  .phone button {
+    letter-spacing: 3px;
+    font-size: 10px;
+  }
+
+  .hero h1 {
+    font-size: 30px;
+    letter-spacing: 0.5rem;
+  }
+  .times {
+    margin: 1rem;
+  }
+  .times td {
+    padding: 0.5rem;
+  }
 }
