@@ -272,39 +272,8 @@ Discover the transformative power of premium hair care products at Merringtons. 
 </div>
     </footer>
   </body>
-  <script>
-    const hamburger = document.querySelector(".hamburger");
-    const navMenu = document.querySelector(".nav-menu");
-    const navLink = document.querySelectorAll(".nav-link");
-
-    hamburger.addEventListener("click", mobileMenu);
-    navLink.forEach((n) => n.addEventListener("click", closeMenu));
-
-    function mobileMenu() {
-      hamburger.classList.toggle("active");
-      navMenu.classList.toggle("active");
-    }
-
-    function closeMenu() {
-      hamburger.classList.remove("active");
-      navMenu.classList.remove("active");
-    }
+  <script src="nav.js">
   </script>
-  <script>
-    const accodingItems = document.querySelectorAll(".according-item");
-    accodingItems.forEach((item) => {
-      const title = item.querySelector(".according-title");
-      const content = item.querySelector(".according-content");
-
-      title.addEventListener("click", () => {
-        for (var i = 0; i < accodingItems.length; i++) {
-          if (accodingItems[i] != item) {
-            accodingItems[i].classList.remove("active");
-          } else {
-            item.classList.toggle("active");
-          }
-        }
-      });
-    });
+  <script src="accordion.js">
   </script>
 </html>
