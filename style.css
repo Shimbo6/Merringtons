@@ -67,7 +67,7 @@ a {
 }
 
 .nav-link:hover {
-  color: #482ff7;
+  color: #000000;
 }
 
 .nav-logo {
@@ -129,8 +129,8 @@ a {
 .hero {
   position: static;
   background: url("images/benyamin-bohlouli-_C-S7LqxHPw-unsplash.jpg") no-repeat
-    center center/cover;
-  height: 420px;
+     center/cover;
+  height: 700px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -153,12 +153,12 @@ a {
 }
 
 .about {
-  margin: 12rem;
+  margin: 12rem 45rem;
   display: flex;
   justify-content: space-between;
 }
 .about-title {
-  width: 30rem;
+  width: 35rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -197,7 +197,10 @@ a {
   height: 100%;
 }
 .prices-info {
-  padding: 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 10rem;
   background-color: #e2e8f0;
   color: #09090a;
 }
@@ -213,7 +216,10 @@ a {
   margin-bottom: 2rem;
 }
 .info {
-  padding: 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 10rem;
   background-color: #09090a;
   color: #e2e8f0;
 }
@@ -254,7 +260,7 @@ td {
 .footer {
   color: #e2e8f0;
   background-color: #101010;
-  margin-top: 10rem;
+  margin-top: 20rem;
   padding: 5rem 10rem;
 }
 form {
@@ -262,6 +268,7 @@ form {
   justify-content: space-between;
   align-items: center;
   border-bottom: 1px solid #e2e8f0;
+  padding: 2rem 20rem;
 }
 
 .sign-up h3 {
